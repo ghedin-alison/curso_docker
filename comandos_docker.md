@@ -76,3 +76,17 @@
 ``` unix
     docker run -d -p 8080:80 nginx
 ```
+---
+#### Verificar log
+``` unix
+    docker logs <id ou nome>
+```
+---
+
+#### Removendo um docker
+``` unix
+    docker -rm <id ou nome>
+```
+Se estiver em execução utilizar a flag -f para forçar
+
+---
