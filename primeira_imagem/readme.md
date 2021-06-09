@@ -29,3 +29,18 @@ COPY . . => copia tudo que está nessa pasta pra dentro do container
 EXPOSE 3000 => porta exposta
 CMD ["node", "app.js"] => linha de comando executada para iniciar a aplicação
 
+7 - dentro do diretório onde está a imagem, executar 
+```unix
+    docker build <diretorio da imagem>
+    ou
+    docker build .
+```
+
+8 - executar
+```unix
+    docker run <imagem>
+```
+Para esse caso é ideal já rodar o caomando expondo a porta configurada no dockerfile, no caso, 3000
+```unix
+    docker run -d -p 3000:3000 49204118949a
+```    
