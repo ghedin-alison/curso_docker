@@ -9,3 +9,9 @@
 ``` unix
     docker system prune
 ```
+
+
+### Para remover container após utilização
+``` unix
+    docker run --rm
+```
